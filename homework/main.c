@@ -15,11 +15,21 @@ int main()
     scanf("请输入你的选择(Please input your choice): %d\n",&choice);
     switch(choice)
     {
-	case 1:break;
-	case 2:break;
-	case 3:break;
-	case 4:break;
-	case 5:break;
+	case 1:
+	    create-1();
+	    break;
+	case 2:
+	    write-1();
+	    break;
+	case 3:
+	    read-1();
+	    break;
+	case 4:
+	    change-1();
+	    break;
+	case 5:
+	    check-1();
+	    break;
 	default:break;
     }
     return 0;
