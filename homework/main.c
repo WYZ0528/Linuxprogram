@@ -3,6 +3,7 @@
 #include"myfun.h"
 int main()
 {
+    system("clear");
     int choice;
     printf("******************************\n");
     printf("0. 退出\n");

@@ -7,16 +7,18 @@ int create-1()
     const char *pathname;
     int fd;
     char pn[100];
-    printf("please input the pathname <100 strings:\n");
+    printf("请输入您想要创建的文件名:\n");
     scanf("%s",pn);
     pathname=pn;
     if((fd=open(pathname,FLAGS,MODES))==-1)
     {
         printf("Error!File open failed! \n");
-        exit(255);
+        exit(0);
     }
     printf("Congratulation!File has been open!\n");
     printf("fd=%d\n",fd);
-    return 0;
+    printf("\n\n按任意键返回主菜单");
+    getchar();
+    getchar();
 }
 
