@@ -23,7 +23,7 @@ int main(void)
     atexit(callback2);
     FILE *fp;
     char buf[]={"hello world"};
-    if((fd=fopen("test.dat","w+"))==NULL)
+    if((fp=fopen("test.dat","w+"))==NULL)
     {
 	perror("failed to create file!\n");
 	return -1;
