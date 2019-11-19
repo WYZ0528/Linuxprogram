@@ -2,7 +2,7 @@
 #define FLAGS O_WRONLY|O_CREAT|O_TRUNC
 #define MODES S_IRWXU|S_IXGRP|S_IRGRP|S_IROTH|S_IXOTH
 //创建新文件函数定义
-int create-1()
+void create-1()
 {   
     const char *pathname;
     int fd;
