@@ -39,7 +39,7 @@ int main()
 			perror("accept error");
 			continue;
 		}
-		printf("收到一个连接来自： %s\n", inet_ntoa(remote_addr.sin_addr));
+		printf("收到一个连接来自： %d\n", inet_ntoa(remote_addr.sin_addr));
 		if (!fork()) { /* 子进程代码段 */
 			if (send(client_fd, "连接上了 \n", 26, 0) == -1)
 				perror("send 出错！");
