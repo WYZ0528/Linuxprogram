@@ -1,4 +1,11 @@
 #include"IOLib.h"
+/*void sleep( clock_t wait )
+{
+   clock_t goal;
+   goal = wait + clock();
+   while( goal > clock());
+}*/
+//1. 创建新文件
 int createNewFile(char *fileName){
 	char *str=fileName;
 	FILE *fp;
@@ -188,11 +195,11 @@ void *clientThread(void *param){
                         break;
 		}
 		if (time ==0) {
-			strcpy(send_str, "客户端系统时间:");
+			strcpy(send_str, "当前客户端时间:");
 			//printf("len:date=%ld\n", strlen(getNowDate()));
 			strcat(send_str, nowDate);
 			printf("after getNowDate\n");
-			strcat(send_str, ".客户端IP:");
+			strcat(send_str, "     客户端IP:");
                         printf("send0:%s\n", send_str);
 			strcat(send_str, ip);
 			send_str[strlen(send_str)] = '\0';
